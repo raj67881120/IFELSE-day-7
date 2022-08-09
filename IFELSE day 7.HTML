@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF & ELSE</title>
+    <script type="text/javascript">
+            function CLICK()
+{
+    var age=prompt("ENTER YOUR AGE");
+    if(age<18)
+    {    
+        document.getElementById("age").innerHTML='&#8226'+" "+"IF YOUR AGE ARE:"+age+"<br>"+"<br>"+'&#8594'+"YOU ARE NOT ELIGIBALE TO GETING DRIVING LICENSE"
+         alert("YOU ARE NOT ELIGIBALE TO GETING DRIVING LICENSE");
+    }
+    else{
+        document.getElementById("age").innerHTML='&#8226'+" "+"IF YOUR AGE ARE:"+age+"<br>"+"<br>"+'&#8594'+"YOU ARE ELIGIBALE TO GETING DRIVING LICENSE"
+        alert("YOU ARE  ELIGIBALE TO GETING DRIVING LICENSE");
+    
+        var type=prompt("ENTER WHICH TYPE OF CATOGARAY YOU WANTS(PLEASE FILL IN UPPERCASE LETTER)");
+        
+            if(type=="MCWOG"|| type == "mcwog")
+            {
+                document.getElementById("type").innerHTML='&#8226'+" "+"IF YOUARE SECLECT THIS TYPE:"+type+"<br>"+"<br>"+'&#8594'+"YOU ARE ONLY ELIGIBLE TO DRIVE VEHICLE WITHOUT GEAR";
+                 alert("YOU ARE ONLY ELIGIBLE TO DRIVE VEHICLE WITHOUT GEAR");
+            }
+            else
+            {   
+                document.getElementById("type").innerHTML='&#8226'+" "+"IF YOUARE SECLECT THIS TYPE:"+type+"<br>"+"<br>"+'&#8594'+"YOU ARE ONLY ELIGIBLE TO DRIVE VEHICLE WITH GEAR";
+                alert("YOU ARE ONLY ELIGIBLE TO DRIVE VEHICLE WITH GEAR");
+            }
+        }
+}
+    </script>
+<style>
+    #age{
+        font-size: 4vh;
+        margin-left: 15px;
+        font-style: italic;
+        font-family: cursive;
+    }
+    #type{
+        font-weight: bolder;
+        font-size: 4vh;
+        font-style: italic;
+        font-family: cursive;
+    }
+    #box{
+        margin-top: 100px;
+        border: 3px solid black;
+        padding: 5px;
+        width: 80%;
+        background-color: black;
+        color: white;
+    }
+    #box1{
+        border: 3px solid black;
+        height: 200px;
+        margin-bottom: 10px;
+        margin: 2px;
+        margin-top: 10px;
+    }
+    #box2{
+        border: 3px solid black;
+        height: 200px;
+        margin: 2px;
+        margin-top: 10px;
+    }
+    h3{
+        color: gray;
+        font-weight: bold;
+        text-align: center;
+        font-size: 5vh;
+    }
+    h1{
+        font-weight: bold;
+        text-align: center;
+    }
+    h2{
+        font-weight: bold;
+        text-align: center;
+        font-size: 3.5vh;
+    }
+    h4{
+        font-weight: bold;
+        text-align: center;
+        font-size: 5vh;
+    }
+    body{
+        background-color: lightcyan;
+    }
+    input{
+        text-align: center;
+        font-size:3vh;
+        border: 2.5PX solid gray;
+        background-color: rgb(0, 95, 249);
+        border-radius: 25px;
+        padding: 6px;
+        color: whitesmoke;
+        width: 110px;
+        font-family: sans-serif;
+    }
+</style>
+</head>
+<body>
+    <h1>THE PROJECT FOR EXAMPLE OF RTO RULES FOR GETTING LICENSE</h1>
+    <h4>PLEASE SHARE TOUR DETAIL REQIRED BY OUR QUESTIONS</h4>
+    <h2>CLICK THIS BUTTON AND ENTER SEATILS ONE BY ONE</h2>
+    <center><input type="button" onclick="CLICK()" value="CLICK"></center>
+    <br>
+    <center><div id="box">
+        <h3>INFORMATION</h3>
+        <div id="box1">
+    <p id="age"></p>
+    </div>
+    <div id="box2">
+    <p id="type"></p>
+    </div>
+    </div>
+    </center>
+</body>
+</html>
